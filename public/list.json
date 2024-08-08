@@ -1,0 +1,120 @@
+[
+  {
+    "id": "course01",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "free",
+    "price": 0,
+    "neworold": "new",
+    "coursename": "Introduction to Programming"
+  },
+  {
+    "id": "course02",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "not",
+    "price": 49.99,
+    "neworold": "new",
+    "coursename": "Advanced Python"
+  },
+  {
+    "id": "course03",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "free",
+    "price": 0,
+    "neworold": "new",
+    "coursename": "Web Development Basics"
+  },
+  {
+    "id": "course04",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "not",
+    "price": 99.99,
+    "neworold": "new",
+    "coursename": "Data Science with R"
+  },
+  {
+    "id": "course05",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "free",
+    "price": 0,
+    "coursename": "Introduction to Machine Learning"
+  },
+  {
+    "id": "course06",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "not",
+    "price": 29.99,
+    "coursename": "JavaScript Essentials"
+  },
+  {
+    "id": "course07",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "not",
+    "price": 59.99,
+    "coursename": "Full Stack Development"
+  },
+  {
+    "id": "course08",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "free",
+    "price": 0,
+    "coursename": "Introduction to SQL"
+  },
+  {
+    "id": "course09",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "not",
+    "price": 79.99,
+    "coursename": "React.js Fundamentals"
+  },
+  {
+    "id": "course10",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "free",
+    "price": 0,
+    "coursename": "Introduction to HTML & CSS"
+  },
+  {
+    "id": "course11",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f915https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "not",
+    "price": 89.99,
+    "coursename": "Cloud Computing with AWS"
+  },
+  {
+    "id": "course12",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "free",
+    "price": 0,
+    "coursename": "Basics of Cyber Security"
+  },
+  {
+    "id": "course13",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "not",
+    "price": 69.99,
+    "coursename": "Data Visualization with Python"
+  },
+  {
+    "id": "course14",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "free",
+    "price": 0,
+    "coursename": "Introduction to Git"
+  },
+  {
+    "id": "course15",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "not",
+    "price": 39.99,
+    "coursename": "UI/UX Design Basics"
+  },
+  {
+    "id": "course16",
+    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "status": "not",
+    "price": 99.99,
+    "neworold": "new",
+    "coursename": "Node.js",
+    "details":"this will  help you in webDevelopment"
+  }
+]
