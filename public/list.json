@@ -1,120 +1,201 @@
 [
   {
     "id": "course01",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "course.png",
     "status": "free",
     "price": 0,
     "neworold": "new",
-    "coursename": "Introduction to Programming"
+    "coursename": "Introduction to Programming",
+    "details": "A beginner course covering basic programming concepts and logic.",
+    "teacher": "Raj Patel",
+    "teacherImage": "/maleteacher.png",
+    "coursePeriod": "4 weeks",
+    "aboutCourse": "This course covers the fundamental building blocks of programming, including variables, loops, and conditionals. Perfect for beginners looking to start their programming journey. Topics include basic syntax, control flow, and introductory problem-solving techniques.",
+    "qualifications": "B.Sc. in Computer Science, Certified Programming Instructor"
   },
   {
     "id": "course02",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "/course.png",
     "status": "not",
     "price": 49.99,
     "neworold": "new",
-    "coursename": "Advanced Python"
+    "coursename": "Advanced Python",
+    "details": "Covers advanced Python programming, including OOP, libraries, and best practices.",
+    "teacher": "Sophie Müller",
+    "teacherImage": "/teacher.png",
+    "coursePeriod": "6 weeks",
+    "aboutCourse": "Deepen your understanding of Python with object-oriented programming, libraries, and best practices. This course is designed for those who have a basic grasp of Python and want to enhance their skills. Topics include advanced OOP concepts, data manipulation, and integration with APIs.",
+    "qualifications": "M.Sc. in Data Science, Python Certified Specialist"
   },
   {
     "id": "course03",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "course.png",
     "status": "free",
     "price": 0,
     "neworold": "new",
-    "coursename": "Web Development Basics"
+    "coursename": "Web Development Basics",
+    "details": "Introduction to HTML, CSS, and JavaScript for building simple web pages.",
+    "teacher": "Amit Sharma",
+    "teacherImage": "/maleteacher.png",
+    "coursePeriod": "5 weeks",
+    "aboutCourse": "Learn how to create web pages using HTML, CSS, and JavaScript. Ideal for beginners, this course covers the basics of web design and development, including layout design, styling, and basic JavaScript programming. Practical assignments include building a portfolio website.",
+    "qualifications": "B.Tech in Web Development, Certified Front-End Developer"
   },
   {
     "id": "course04",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "/course.png",
     "status": "not",
     "price": 99.99,
     "neworold": "new",
-    "coursename": "Data Science with R"
+    "coursename": "Data Science with R",
+    "details": "Explore data analysis and visualization using the R programming language.",
+    "teacher": "Laura Johnson",
+    "teacherImage": "/teacher.png",
+    "coursePeriod": "8 weeks",
+    "aboutCourse": "Dive into the world of data science with R, exploring various data analysis and visualization techniques. This course covers statistical analysis, data cleaning, and visualization tools. Ideal for those looking to enter the field of data science or enhance their analytical skills.",
+    "qualifications": "Ph.D. in Statistics, Data Science Expert"
   },
   {
     "id": "course05",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "/course.png",
     "status": "free",
     "price": 0,
-    "coursename": "Introduction to Machine Learning"
+    "coursename": "Introduction to Machine Learning",
+    "details": "Covers machine learning concepts, algorithms, and basic models using Python.",
+    "teacher": "Ravi Kumar",
+    "teacherImage": "/maleteacher.png",
+    "coursePeriod": "6 weeks",
+    "aboutCourse": "An introductory course to machine learning using Python. Learn about different algorithms, model training, and evaluation. The course includes practical exercises in building and testing machine learning models, making it perfect for aspiring data scientists and machine learning enthusiasts.",
+    "qualifications": "M.Tech in Machine Learning, Certified ML Engineer"
   },
   {
     "id": "course06",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "/course.png",
     "status": "not",
     "price": 29.99,
-    "coursename": "JavaScript Essentials"
+    "coursename": "JavaScript Essentials",
+    "details": "Learn the core concepts of JavaScript for front-end and back-end development.",
+    "teacher": "Maria Garcia",
+    "teacherImage": "/teacher.png",
+    "coursePeriod": "5 weeks",
+    "aboutCourse": "Master the essential concepts of JavaScript for both front-end and back-end development. This course covers syntax, functions, and events, and includes practical exercises in creating interactive web applications. Ideal for developers looking to solidify their JavaScript skills.",
+    "qualifications": "B.Sc. in Computer Engineering, JavaScript Specialist"
   },
   {
     "id": "course07",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "/course.png",
     "status": "not",
     "price": 59.99,
-    "coursename": "Full Stack Development"
+    "coursename": "Full Stack Development",
+    "details": "Learn to develop complete web applications using both front-end and back-end technologies.",
+    "teacher": "Nina Patel",
+    "teacherImage": "/teacher.png",
+    "coursePeriod": "10 weeks",
+    "aboutCourse": "A comprehensive course on full stack development, covering front-end and back-end technologies for web applications. The course includes topics such as web frameworks, database management, and server-side scripting, providing a thorough understanding of building modern web applications.",
+    "qualifications": "M.Sc. in Software Engineering, Full Stack Developer Certification"
   },
   {
     "id": "course08",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "/course.png",
     "status": "free",
     "price": 0,
-    "coursename": "Introduction to SQL"
+    "coursename": "Introduction to SQL",
+    "details": "A beginner's guide to SQL queries, database management, and data manipulation.",
+    "teacher": "Aisha Khan",
+    "teacherImage": "/teacher.png",
+    "coursePeriod": "4 weeks",
+    "aboutCourse": "Learn the basics of SQL for database management, including queries and data manipulation. This course covers fundamental SQL commands, database design, and data retrieval techniques, making it ideal for beginners in data management and analysis.",
+    "qualifications": "B.Sc. in Information Systems, SQL Certified Professional"
   },
   {
     "id": "course09",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "/course.png",
     "status": "not",
     "price": 79.99,
-    "coursename": "React.js Fundamentals"
+    "coursename": "React.js Fundamentals",
+    "details": "Master the basics of React.js for building dynamic and interactive user interfaces.",
+    "teacher": "Liam Williams",
+    "teacherImage": "/maleteacher.png",
+    "coursePeriod": "7 weeks",
+    "aboutCourse": "An essential course on React.js, focusing on building dynamic user interfaces and state management. Learn about components, hooks, and React Router. This course includes hands-on projects to help you build real-world applications using React.",
+    "qualifications": "B.Sc. in Computer Science, React.js Expert"
   },
   {
     "id": "course10",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "/course.png",
     "status": "free",
     "price": 0,
-    "coursename": "Introduction to HTML & CSS"
+    "coursename": "UI/UX Design Basics",
+    "details": "Understand the principles of user interface and user experience design.",
+    "teacher": "Chloe Wilson",
+    "teacherImage": "/maleteacher.png",
+    "coursePeriod": "5 weeks",
+    "aboutCourse": "A beginner's course covering the fundamentals of UI/UX design, including layout, color schemes, and usability. Learn how to create user-friendly designs and conduct user research to enhance your design skills. Ideal for those interested in entering the design field.",
+    "qualifications": "M.A. in Design, Certified UX Designer"
   },
   {
     "id": "course11",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f915https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "/course.png",
     "status": "not",
     "price": 89.99,
-    "coursename": "Cloud Computing with AWS"
+    "coursename": "Introduction to Cloud Computing",
+    "details": "An overview of cloud computing services and deployment models.",
+    "teacher": "Aditya Verma",
+    "teacherImage": "/maleteacher.png",
+    "coursePeriod": "6 weeks",
+    "aboutCourse": "Explore cloud computing concepts, including IaaS, PaaS, and SaaS. Learn about major cloud providers, service models, and cloud architecture. This course is perfect for those looking to understand how cloud technologies are transforming IT infrastructure.",
+    "qualifications": "M.Tech in Cloud Computing, Certified Cloud Architect"
   },
   {
     "id": "course12",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "/course.png",
     "status": "free",
     "price": 0,
-    "coursename": "Basics of Cyber Security"
+    "coursename": "Introduction to Blockchain",
+    "details": "Basics of blockchain technology and its applications.",
+    "teacher": "Sofia Martinez",
+    "teacherImage": "/teacher.png",
+    "coursePeriod": "4 weeks",
+    "aboutCourse": "Understand blockchain technology, its underlying principles, and its applications in various industries. Learn about cryptocurrencies, smart contracts, and decentralized applications. Ideal for beginners interested in blockchain technology and its potential impact.",
+    "qualifications": "B.Sc. in Cryptography, Blockchain Expert"
   },
   {
     "id": "course13",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "/course.png",
     "status": "not",
     "price": 69.99,
-    "coursename": "Data Visualization with Python"
+    "coursename": "Cybersecurity Fundamentals",
+    "details": "Learn the basics of cybersecurity and protecting systems from threats.",
+    "teacher": "Ananya Gupta",
+    "teacherImage": "/teacher.png",
+    "coursePeriod": "6 weeks",
+    "aboutCourse": "This course provides a comprehensive introduction to cybersecurity, including threat analysis, risk management, and defensive strategies. Learn about various types of cyber threats and how to protect systems and data from potential breaches.",
+    "qualifications": "B.Tech in Information Security, Certified Ethical Hacker"
   },
   {
     "id": "course14",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "/course.png",
     "status": "free",
     "price": 0,
-    "coursename": "Introduction to Git"
+    "coursename": "Basics of DevOps",
+    "details": "Introduction to DevOps practices, tools, and workflows.",
+    "teacher": "Ethan Miller",
+    "teacherImage": "/maleteacher.png",
+    "coursePeriod": "5 weeks",
+    "aboutCourse": "Gain an understanding of DevOps principles, including continuous integration, continuous delivery, and infrastructure as code. This course covers popular DevOps tools and methodologies, helping you to streamline development and operations processes.",
+    "qualifications": "M.Sc. in Software Engineering, DevOps Specialist"
   },
   {
     "id": "course15",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
+    "image": "/course.png",
     "status": "not",
-    "price": 39.99,
-    "coursename": "UI/UX Design Basics"
-  },
-  {
-    "id": "course16",
-    "image": "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164325.jpg?t=st=1722086078~exp=1722089678~hmac=f662ae2f1f0b55240927c43ea037f9154688fa97ecfebf3541a62fda57170eba&w=1060",
-    "status": "not",
-    "price": 99.99,
-    "neworold": "new",
-    "coursename": "Node.js",
-    "details":"this will  help you in webDevelopment"
+    "price": 74.99,
+    "coursename": "Mobile App Development with Flutter",
+    "details": "Learn to build cross-platform mobile applications using Flutter.",
+    "teacher": "Leila Ibrahim",
+    "teacherImage": "/teacher.png",
+    "coursePeriod": "7 weeks",
+    "aboutCourse": "This course covers the essentials of building mobile apps with Flutter, including UI design, state management, and integration with APIs. Ideal for developers interested in creating cross-platform applications with a single codebase.",
+    "qualifications": "B.Sc. in Mobile Computing, Flutter Certified Developer"
   }
 ]

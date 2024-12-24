@@ -1,63 +1,105 @@
 import React, { useState } from "react";
 import loginLogo from "../assets/loginLogo.png";
 import { useForm } from "react-hook-form";
-import {  useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom"; // Correct import statement
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  sendPasswordResetEmail,
+} from "firebase/auth";
 import app from "../db/db";
+import LogOut from "./LogOut"; // Import LogOut component
+
 const auth = getAuth(app);
 
 const Login = () => {
   const navigate = useNavigate();
   const [isLogin, setIsLogin] = useState(true);
-  const { register, handleSubmit, reset } = useForm();
+  const [showForgotPassword, setShowForgotPassword] = useState(false);
   const [email, setEmail] = useState("");
-  const [password, setPasssword] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const { register, handleSubmit, reset } = useForm();
 
   const toggleForm = () => {
     setIsLogin(!isLogin);
     reset(); // Reset the form fields when toggling between login and signup
+    setErrorMessage(""); // Clear error messages
   };
 
   const onSubmit = (data) => {
     console.log(data);
   };
+
   const signupme = (e) => {
     e.preventDefault();
+    if (!email || !password) {
+      setErrorMessage("Email and password are required.");
+      return;
+    }
+
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed up
         const user = userCredential.user;
-        // navigate("/")
+        console.log("User signed up:", user);
         document.getElementById("my_modal_3").close();
         setEmail("");
-        setPasssword("");
+        setPassword("");
+        setErrorMessage(""); // Clear error messages
         // ...
       })
       .catch((error) => {
-        const errorCode = error.code;
         const errorMessage = error.message;
-        // ..
+        console.error("Sign-up error:", errorMessage);
+        setErrorMessage(errorMessage);
       });
-
   };
-  const signinme=(e)=>{
+
+  const signinme = (e) => {
     e.preventDefault();
-    console.log(email);
+    if (!email || !password) {
+      setErrorMessage("Email and password are required.");
+      return;
+    }
+
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log("User logged in:", userCredential.user);
         document.getElementById("my_modal_3").close();
+        setErrorMessage(""); // Clear error messages
       })
       .catch((error) => {
-        console.log("Error:", error.message);
+        console.error("Sign-in error:", error.message);
+        setErrorMessage(error.message);
       });
-  }
+  };
+
+  const handleForgotPassword = () => {
+    if (!email) {
+      setErrorMessage("Please enter your email.");
+      return;
+    }
+
+    sendPasswordResetEmail(auth, email)
+      .then(() => {
+        alert("Password reset email sent!");
+        setShowForgotPassword(false);
+        setEmail(""); // Clear email field
+        setErrorMessage(""); // Clear error messages
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.error("Forgot password error:", errorMessage);
+        setErrorMessage(errorMessage);
+      });
+  };
 
   return (
     <div>
       <button
-        className="btn  bg-black border-spacing-2"
+        className="btn bg-black border-spacing-2"
         onClick={() => document.getElementById("my_modal_3").showModal()}
       >
         Login
@@ -81,9 +123,12 @@ const Login = () => {
             {isLogin ? "Hello, Welcome Back!" : "Create Your Account"}
           </h2>
           <form onSubmit={handleSubmit(onSubmit)}>
+            {errorMessage && (
+              <p className="text-red-500 text-center mb-4">{errorMessage}</p>
+            )}
             {isLogin ? (
               <>
-                <div className="mb-4 ">
+                <div className="mb-4">
                   <label className="flex items-center bg-gray-100 rounded-md p-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +170,7 @@ const Login = () => {
                       type="password"
                       placeholder="Password"
                       value={password}
-                      onChange={(e) => setPasssword(e.target.value)}
+                      onChange={(e) => setPassword(e.target.value)}
                       className="bg-gray-100 outline-none w-full"
                       required
                     />
@@ -136,7 +181,11 @@ const Login = () => {
                     <input type="checkbox" className="mr-2" />
                     <span>Remember me</span>
                   </label>
-                  <a href="#" className="text-sm text-blue-500">
+                  <a
+                    href="#"
+                    className="text-sm text-blue-500"
+                    onClick={() => setShowForgotPassword(true)}
+                  >
                     Forgot password?
                   </a>
                 </div>
@@ -149,25 +198,6 @@ const Login = () => {
               </>
             ) : (
               <>
-                {/* <div className="mb-4">
-                  <label className="flex items-center bg-gray-100 rounded-md p-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 16 16"
-                      fill="currentColor"
-                      className="h-4 w-4 opacity-70 mr-2"
-                    >
-                      <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
-                    </svg>
-                    <input
-                      {...register("username")}
-                      type="text"
-                      placeholder="Username"
-                      className="bg-gray-100 outline-none w-full"
-                      required
-                    />
-                  </label>
-                </div> */}
                 <div className="mb-4">
                   <label className="flex items-center bg-gray-100 rounded-md p-1">
                     <svg
@@ -210,7 +240,7 @@ const Login = () => {
                       type="password"
                       placeholder="Password"
                       value={password}
-                      onChange={(e) => setPasssword(e.target.value)}
+                      onChange={(e) => setPassword(e.target.value)}
                       className="bg-gray-100 outline-none w-full"
                       required
                     />
@@ -249,6 +279,31 @@ const Login = () => {
             )}
           </form>
 
+          {showForgotPassword && (
+            <div className="mt-4">
+              <h3 className="text-xl font-semibold mb-4">Forgot Password</h3>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="bg-gray-100 pl-2 outline-none w-full mb-4"
+              />
+              <button
+                onClick={handleForgotPassword}
+                className="w-full bg-blue-600 text-white py-2 rounded-md"
+              >
+                Send Password Reset Email
+              </button>
+              <button
+                onClick={() => setShowForgotPassword(false)}
+                className="w-full bg-gray-300 text-black py-2 rounded-md mt-2"
+              >
+                Back to Login
+              </button>
+            </div>
+          )}
+
           <p className="text-center">
             {isLogin ? (
               <>
@@ -272,6 +327,11 @@ const Login = () => {
               </>
             )}
           </p>
+
+          {/* Conditionally render LogOut button if user is logged in */}
+          {false /* Replace with actual condition to check if user is logged in */ && (
+            <LogOut />
+          )}
         </div>
       </dialog>
     </div>

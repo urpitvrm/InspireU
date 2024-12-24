@@ -78,7 +78,7 @@ function Course() {
       <div className="m-4 mb-12 mx-8">
         <Slider {...settings}>
           {filterData.map((item) => (
-            <Card item={item} key={item.id} />
+            <Card item={item} key={item.id}  />
           ))}
         </Slider>
       </div>

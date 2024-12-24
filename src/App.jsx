@@ -6,6 +6,8 @@ import Courses from "./course/Courses";
 import Contactus from "./Contactus/Contactus";
 import AboutPage from "./components/AboutPage";
 import Contact from "./components/Contact";
+import Card from "./components/Card";
+import CourseDetail from "./components/CourseDetail";
 
 
 function App() {
@@ -14,8 +16,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/course/Courses" element={<Courses />} />
-        <Route path="/Contact" element={<Contact/>} />
+        <Route path="/Contact" element={<Contact />} />
         <Route path="/components/AboutPage" element={<AboutPage />} />
+        <Route path="/card" element={<Card />} />
+        <Route path="/course/:id" element={<CourseDetail />} />
       </Routes>
     </div>
 
