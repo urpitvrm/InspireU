@@ -10,7 +10,7 @@ const auth = getAuth(app);
 
 function Navbar({ onAboutClick }) {
   const [sticky, setSticky] = useState(false);
-  const [islogin,setislongin]=useState(false)
+  const [islogin, setislongin] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   const element = document.documentElement;
   useEffect(() => {
@@ -25,13 +25,12 @@ function Navbar({ onAboutClick }) {
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
-        setislongin(true)
+        setislongin(true);
       } else {
-        setislongin(false)
+        setislongin(false);
       }
     });
-  }, [auth])
-  
+  }, [auth]);
 
   const navItems = (
     <>
@@ -39,7 +38,7 @@ function Navbar({ onAboutClick }) {
         <a href="/">Home</a>
       </li>
       <li className="hover:underline">
-        <a href="/course/Courses">Course</a>
+        <Link to="/course/Courses">Course</Link>
       </li>
       <li className="hover:underline">
         <Contact />
@@ -100,10 +99,8 @@ function Navbar({ onAboutClick }) {
             />
           </div>
 
-         
-
           {islogin ? (
-            <LogOut/>
+            <LogOut />
           ) : (
             <div>
               <Login />
